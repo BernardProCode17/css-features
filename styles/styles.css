@@ -1,0 +1,157 @@
+html{
+    height: 100%;
+
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(28, 28, 28);
+    line-height: 1.5;
+    position: relative;
+    height: 100%;
+    /* background-color: rgb(246, 246, 246); */
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(28, 28, 28);
+}
+
+ul li{
+    margin: .7rem;
+}
+
+table {
+    text-align: left;
+    padding: 1rem;
+}
+th,
+td{
+    width: 10%;
+}
+
+
+
+/* body */
+body {
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.main {
+    position: absolute;
+    left: 10rem;
+    right: 10rem;
+    margin: 0 auto;
+    padding-right: 2.2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+
+    background-color: rgb(255, 255, 255);
+}
+
+
+ul code {
+    padding: 0.3rem;
+    background-color: rgb(246, 246, 246);
+    border-radius: 4px;
+}
+
+
+/* Demo */
+.customize-color{
+    padding: 0 1rem 1rem;
+}
+
+.customize-color div {
+    padding: 1rem;
+}
+table{
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 4px;
+   
+}
+
+
+tbody {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+th span{
+    font-weight: 400;
+    padding: 0 1rem;
+}
+th,
+td {
+    padding: .5rem;
+}
+tr{
+    border-top:1px solid rgb(200, 200, 200);
+}
+
+.custom {
+    accent-color: #0000ff;
+}
+
+/* code */
+.code-example {
+    
+}
+
+.name-bg {
+    background-color: rgb(255, 255, 255);
+    margin:0;
+    padding: .5rem;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 4px;
+}
+
+.code-example p span{
+    padding: .5rem;
+}
+
+pre.language-css{
+    margin:0;
+}
+
+/* Side bar */
+.side-bar{
+    flex-basis: 55%;
+    background-color: rgb(246, 246, 246);
+    
+}
+
+.side-bar h2 {
+    font-size: 1.2rem;
+    
+}
+
+.side-bar-container {
+
+    background-color: white;
+    box-shadow:2px 2px 2px gray;
+    border-radius: 8px;
+    padding:  1rem;
+    margin: 1.2rem;
+
+    position: sticky;
+    top: 5rem;
+
+}
+
+.side-bar ul {
+    padding: 0;
+}
+
+.side-bar li {
+    font-size: 1rem;
+}
+
+
