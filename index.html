@@ -148,12 +148,12 @@
                                     accent-color: #0000ff;
                                 }
                             </code>
-                        </pre>
+                    </pre>
 
                 </div>
 
                 <div>
-                    <h2><a href="demopage.html">Demo</a></h2>
+                    <h5><a href="accent-color.html">Demo</a></h2>
                 </div>
 
             </section>
@@ -167,7 +167,7 @@
             <section class="feature-sections dynamic-viewport">
 
                 <h2>2. Dynamic Viewport</h2>
-                <a href="https://caniuse.com/?search=dynamic%20viewport">Browsers Support</a>
+                <a href="https://caniuse.com/?search=dynamic%20viewport">Supported Browsers</a>
 
                 <article>
                     <h3>What is dynamic Viewport?</h3>
@@ -190,7 +190,7 @@
                     </p>
 
                     <p>That why we have the new viewport units to make the viewport respond to the full specified
-                        dimensionso f the viewport. 
+                        dimensionso f the viewport.
                     </p>
 
                     <h3>Dynamic Viewport properties</h3>
@@ -211,7 +211,7 @@
 
                     <p>SV sets the size of the viewport with the address and navigation bar in consideration, while LV
                         does not consider the address and navigation bar. With DV it acts as both the SV and the LV,
-                        making the viewport update responsively. 
+                        making the viewport update responsively.
                     </p>
                 </article>
 
@@ -223,25 +223,124 @@
                     *************
                 -->
                 <section>
+
                     <h3>Example</h3>
-                    <img src="/Viewport Units.jpeg" alt="picture of dynamic viewport example with 3 phone screen showing the viewport units">
+
+                    <img src="/Viewport Units.jpeg"
+                        alt="picture of dynamic viewport example with 3 phone screen showing the viewport units"
+                        width="500">
+
+                    <h3>Code Output</h3>
+
+                    <h4 class="name-bg">CSS</h4>
+
+                    <pre>
+                            <code class="language-css line-numbers" data-prismjs-copy="Copy">
+                                .container {
+                                    width: 90dvw;
+                                    height: 100dvh;
+                                }
+                            </code>
+                    </pre>
+
+                    <h5><a href="viewport.html">Demo</a></h5>
                 </section>
 
             </section>
 
 
-
-
-
-
-
-
-
-
-
             <section class="feature-sections container-queries">
+
                 <h2>3. Container Queries</h2>
+                <a href="https://caniuse.com/?search=container%20Queries%20(size)">Supported Browsers</a>
+
+                <article>
+
+                    <h3>What is Container Query</h3>
+
+                    <p>Container query is a CSS propery, that allows you to adjust the style of an element based on its container dimensions  and not the viewport. (Mozilla Developer Network, n.d.).</p>
+
+                    <p>With a container query, you would use the following properties and definitions:</p>
+
+                    <ol>
+                        <li> <h4>Container-type:</h4> This is a property that helps the browser know which containers you might be interested in checking later for their size. The values that can be used for this property are size, inline-size, or normal (Mozilla Developer Network, n.d.).
+                        </li>
+
+                        <li> <h4>Container-name:</h4> 
+                            This is another way to give a containment context. Once the container is named, the name can be used in a container query to target a specific container (Mozilla Developer Network, n.d.).
+                        </li>
+
+                        <li> <h4>Inline-size:</h4>
+                            This refers to the width of the container. It considers how wide something is and affects how elements are laid out horizontally. It controls how the content fits and looks in that width (Mozilla Developer Network, n.d.).
+                        </li>
+
+                        <li> <h4>Size:</h4>
+                            This considers both the width and the height of a container where content is placed. It deals with how elements are arranged and how large the container holding the content is. It affects how the layout, appearance, and overall size of the container are controlled (Mozilla Developer Network, n.d.).
+                        </li>
+
+                        <li> <h4>Normal:</h4>
+                            This means that the element does not dictate or set any rules specifically for the size of its container. It does not play a role in queries about container size, but it affects the style and appearance of the container itself (Mozilla Developer Network, n.d.).
+                        </li>
+
+                    </ol>
+
+                    <h3>Why use container Query</h3>
+
+                    <h4>Specificity</h4>
+                    <p>container query can help you target elements with specific styles at a set dimension without media query. Previously, if you wanted to change an element based on the device dimensions you would use a media query, which is based on the DOM viewport dimensions. That would mean you need to make a new media query to change that element styling when the viewport changes.</p>
+
+                    <h4>Responsiveness</h4>
+                    <p>With container query you can write a query for that <strong>"Container"</strong> and when the viewport changes the styles will apply to the element as specified, without having to change other elements or writing a new media for that container or other elements/containers.</p>
+
+                    <h4>customization</h4>
+                    <p>It allows for more customization options. For example, you may want to modify a sidebar, at a certain width or height you can set a query to sticky the sidebar at set dimenions, stack in a column below set width, or removed at set height, without having to styles other elements that is not affected by the viewport size changes. </p>
+
+                    <h3>Where would you use a Container Query</h3>
+
+                    <p>Container query can be used wherever you need to adjust an element’s style or lay based on its container. It is <strong><em>Kind of</em></strong> an alternative to a media query, but best used with media queries as they  work in relation to each other.</p>
+
+                    <p>Container queries works like flex and grid, where the styles is applied to the descendant element of a container. Such as blocks level elements like sections, articles, cards, forms, and sidebars and more. Additionally, it could be used for global blocks such as header, footer, and main.
+                    </p>
+
+                </article>
+
+                <section>
+                    <h3>Example</h3>
+
+                    <h4 class="name-bg">CSS</h4>
+                    <pre>
+                            <code class="language-css line-numbers" data-prismjs-copy="Copy">
+                                .container {
+                                 container-type: inline-size:
+                                 container-name: product-card;
+                                    }
+
+                                @container product-card (min-width: 700px) {
+                                    h2 {
+                                        color: aliceblue
+                                        font-weight: 300;
+                                    }
+                                }
+                            </code>
+                          
+                            <code class="language-css line-numbers" data-prismjs-copy="Copy">
+                                //Shorthand
+                                .container {
+                                    container: product-card / inline-size
+                                }
+
+                                @container product-card (min-width: 700px) {
+                                    h2 {
+                                        color: aliceblue
+                                        font-weight: 300;
+                                    }
+                                }
+                            </code>
+
+                    </pre>
+                </section>
             </section>
+
         </section>
 
 
