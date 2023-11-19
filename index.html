@@ -12,143 +12,240 @@
 </head>
 
 <body>
+    <header class="header">
 
-    <div class="main">
+        <h1>New CSS Technologies</h1>
 
+        <p>
+            We'll be covering three CSS properties that are now widely supported by modern browsers. These properties
+            give you greater control over your website elements and help you create visually appealing and
+            responsive content.
+        </p>
 
-        <div class="main-container">
+        <div class="intro-message">
 
-            <h1>Recently added CSS properties you should know</h1>
-            <p>We’ll be covering three CSS properties that are now widely supported by modern browsers. These properties
-                give you greater control over your website elements and help you create visually appealing and
-                responsive content.</p>
+            <h2>These CSS properties are:</h2>
 
-            <span>These CSS properties are:</span>
             <ul>
                 <li><code>&lt;accent-color&gt;</code></li>
                 <li><code>&lt;dynamic viewport&gt;</code></li>
                 <li><code>&lt;container query&gt;</code></li>
             </ul>
 
-            <section id="accent-color">
-                <h2>1. Accent color</h2></a>
-                <div>
-                    <span><a href="https://caniuse.com/?search=Accent%20color">Supported Browsers</a></span>
-
-                </div>
-
-                <h3>What is accent color?</h3>
-                <p>The accent color property allows you to add color to HTML form inputs such as checkboxes, radio
-                    buttons,
-                    and progress bars.</p>
-                <ul>
-                    <li><code>&lt;input type="checkbox"&gt;</code></li>
-                    <li><code>&lt;input type="radio"&gt;</code></li>
-                    <li><code>&lt;input type="range"&gt;</code></li>
-                    <li><code>&lt;progress&gt;</code></li>
-                </ul>
-                <h3>Why use accent color?</h3>
-                <p>Color plays a key role in defining your brand; therefore, tools that enable you to apply color
-                    styling to
-                    all elements of your website are of great value.
-                <p>Accent color makes it easy to manage the look of forms on your website so that they match your
-                    brand’s
-                    color theme.</p>
-                <div>
-                    <ul>
-                        <li><strong>Saves you time</strong></li>
-                        <p>Before accent color, if you didn’t like the browser’s default style, your other option was to
-                            recreate the form inputs from scratch, which can be time-consuming and complex.</p>
-                        <li><strong>Built-in accessibility</strong></li>
-                        <p>Depending on what color you pick to style the inputs, the browser will automatically set the
-                            input background to either white or black to provide optimal color contrast.</p>
-                    </ul>
-                </div>
-                </p>
-
-                <h3>Example</h3>
-
-                <div class="demo-container">
-                    <div class="default-demo">
-                        <div class="customize-color">
-                            <span>Selected your theme color</span>
-                            <div>
-                                <input type="color" id="color-picker" name="custom" value="#0000ff" />
-                                <label for="color-picker">Customized color</label>
-                            </div>
-
-                        </div>
-
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th scope="col">default</th>
-                                    <th scope="col" class="custom">Accent-color</th>
-                                </tr>
-                            </thead>
-
-
-                            <tbody>
-                                <tr>
-                                    <th><span>checkbox</span></th>
-                                    <td><input type="checkbox" checked /></td>
-                                    <td><input type="checkbox" class="custom" checked /></td>
-                                </tr>
-                                <tr>
-                                    <th><span>radio</span></th>
-                                    <td><input type="radio" /></td>
-                                    <td><input type="radio" class="custom" /></td>
-                                </tr>
-                                <tr>
-                                    <th><span>range</span></th>
-                                    <td><input type="range" checked /></td>
-                                    <td><input type="range" class="custom" checked /></td>
-                                </tr>
-                                <tr>
-                                    <th><span>progress</span></th>
-                                    <td><progress value="70" max="100">70 %</progress></td>
-                                    <td> <progress class="custom" value="70" max="100">70 %</progress></td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h3>Code Output</h3>
-
-
-                    <div class="code-example">
-                        <p class="name-bg">
-                            <span class="language-name">CSS</span>
-                        <pre>
-                    <code class="language-css line-numbers" data-prismjs-copy="Copy">
-                        .custom {
-                            accent-color: #0000ff;
-                        }
-                    </code>
-                </pre>
-
-                        </p>
-                    </div>
-
-                    <div>
-                        <h2><a href="demopage.html">Demo</a></h2>
-                    </div>
-            </section>
-
-            <section id="dynamic-viewport">
-                <h2>2. Dynamic Viewport</h2>
-            </section>
-
-            <section id="container-queries">
-                <h2>3. Container Queries</h2>
-            </section>
-
-
         </div>
 
-        <div class="side-bar">
+    </header>
+
+    <main class="main">
+
+
+        <section class="feature-sections accent-color">
+
+            <h2>1. Accent color</h2>
+
+            <a href="https://caniuse.com/?search=Accent%20color">Supported Browsers</a>
+
+            <h3>What is accent color?</h3>
+
+            <p>The accent color property allows you to add color to HTML form inputs such as checkboxes, radio
+                buttons,
+                and progress bars.
+            </p>
+
+            <ul>
+                <li><code>&lt;input type="checkbox"&gt;</code></li>
+                <li><code>&lt;input type="radio"&gt;</code></li>
+                <li><code>&lt;input type="range"&gt;</code></li>
+                <li><code>&lt;progress&gt;</code></li>
+            </ul>
+
+            <h3>Why use accent color?</h3>
+
+            <p>Color plays a key role in defining your brand; therefore, tools that enable you to apply color
+                styling to
+                all elements of your website are of great value.
+            </p>
+
+            <p>
+                Accent color makes it easy to manage the look of forms on your website so that they match your
+                brand’s
+                color theme.
+            </p>
+
+            <div>
+
+                <ul>
+                    <li><strong>Saves you time</strong></li>
+
+                    <p>Before accent color, if you didn’t like the browser’s default style, your other option was to
+                        recreate the form inputs from scratch, which can be time-consuming and complex.</p>
+
+                    <li><strong>Built-in accessibility</strong></li>
+
+                    <p>Depending on what color you pick to style the inputs, the browser will automatically set the
+                        input background to either white or black to provide optimal color contrast.</p>
+                </ul>
+
+            </div>
+
+
+            <h3>Example</h3>
+
+            <section class="demo-container">
+
+
+                <div class="customize-color">
+                    <h4>Selected your theme color</h4>
+
+                    <input type="color" id="color-picker" name="custom" value="#0000ff" />
+                    <label for="color-picker">Customized color</label>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th scope="col">default</th>
+                            <th scope="col" class="custom">Accent-color</th>
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+                        <tr>
+                            <th><span>checkbox</span></th>
+                            <td><input type="checkbox" checked /></td>
+                            <td><input type="checkbox" class="custom" checked /></td>
+                        </tr>
+                        <tr>
+                            <th><span>radio</span></th>
+                            <td><input type="radio" /></td>
+                            <td><input type="radio" class="custom" /></td>
+                        </tr>
+                        <tr>
+                            <th><span>range</span></th>
+                            <td><input type="range" checked /></td>
+                            <td><input type="range" class="custom" checked /></td>
+                        </tr>
+                        <tr>
+                            <th><span>progress</span></th>
+                            <td><progress value="70" max="100">70 %</progress></td>
+                            <td> <progress class="custom" value="70" max="100">70 %</progress></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <h3>Code Output</h3>
+
+
+                <div class="code-example">
+                    <h4 class="name-bg">CSS</h4>
+
+                    <pre>
+                            <code class="language-css line-numbers" data-prismjs-copy="Copy">
+                                .custom {
+                                    accent-color: #0000ff;
+                                }
+                            </code>
+                        </pre>
+
+                </div>
+
+                <div>
+                    <h2><a href="demopage.html">Demo</a></h2>
+                </div>
+
+            </section>
+
+
+
+
+
+
+
+            <section class="feature-sections dynamic-viewport">
+
+                <h2>2. Dynamic Viewport</h2>
+                <a href="https://caniuse.com/?search=dynamic%20viewport">Browsers Support</a>
+
+                <article>
+                    <h3>What is dynamic Viewport?</h3>
+
+                    <p>CSS viewport units - ‘vw’ for width and ‘vh’ for height - work well on desktop, but on mobile
+                        devices. They do not take into consideration the dynamic UI elements such as the address or the
+                        navigation bar. </p>
+
+                    <p>That means when these UI elements expand or retract, your content may not display as intended.
+                        Dynamic viewport properties provide a way for you to get the viewport dimensions as specified.
+                    </p>
+
+
+
+                    <h3> Why use Dynamiv ViewPort?</h3>
+
+                    <p>On mobile, the address bar at the top and the navigation bar at the bottom, typically changes in
+                        size as the user scrolls up or down. But it does not changes the viewport to respond to the
+                        newly available space on the device.
+                    </p>
+
+                    <p>That why we have the new viewport units to make the viewport respond to the full specified
+                        dimensionso f the viewport. 
+                    </p>
+
+                    <h3>Dynamic Viewport properties</h3>
+
+                    <ul class="list">
+                        <li><code>svw</code></li>
+                        <li><code>svh</code></li>
+                        <li><code>lvw</code></li>
+                        <li><code>lvh</code></li>
+                        <li><code>dvw</code></li>
+                        <li><code>dvh</code></li>
+                    </ul>
+
+                    <p>There are 3 new units for the dynamic viewport properties. SV, LV DV, with their respective width
+                        and height. In most cases you would use the DV as it allows for responsiveness and is between
+                        the SV LV.
+                    </p>
+
+                    <p>SV sets the size of the viewport with the address and navigation bar in consideration, while LV
+                        does not consider the address and navigation bar. With DV it acts as both the SV and the LV,
+                        making the viewport update responsively. 
+                    </p>
+                </article>
+
+
+                <!-- 
+                    ***********
+                    How are we going to show a static example for this section?
+                    We don't have an example like the accent color exampl to enbedd in the code
+                    *************
+                -->
+                <section>
+                    <h3>Example</h3>
+                    <img src="/Viewport Units.jpeg" alt="picture of dynamic viewport example with 3 phone screen showing the viewport units">
+                </section>
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+            <section class="feature-sections container-queries">
+                <h2>3. Container Queries</h2>
+            </section>
+        </section>
+
+
+        <aside class="side-bar">
             <div class="side-bar-container">
                 <h2>Table of Content</h2>
                 <ul>
@@ -157,9 +254,8 @@
                     <li><a href="#container-queries">Container Queries</a></li>
                 </ul>
             </div>
-        </div>
-
-    </div>
+        </aside>
+    </main>
 </body>
 
 </html>

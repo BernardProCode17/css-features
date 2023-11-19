@@ -1,7 +1,8 @@
-html{
+html {
     height: 100%;
 
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2rem;
@@ -20,7 +21,7 @@ h4 {
     color: rgb(28, 28, 28);
 }
 
-ul li{
+ul li {
     margin: .7rem;
 }
 
@@ -28,8 +29,9 @@ table {
     text-align: left;
     padding: 1rem;
 }
+
 th,
-td{
+td {
     width: 10%;
 }
 
@@ -39,7 +41,55 @@ td{
 body {
     display: block;
     margin: 0 auto;
-    
+
+}
+
+.header {
+    /* background-color: rgba(123, 119, 223, 0.139); */
+    width: 90%;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    border-bottom: 2px solid grey;
+
+
+    & h1 {
+        text-align: center;
+        font-size: 3rem;
+
+    }
+
+    .intro-message {
+        background-color: rgba(165, 168, 170, 0.50);
+        border-radius: 1rem;
+
+        & h2 {
+            text-align: center;
+            width: 70%;
+            margin: 1.9rem auto;
+            font-weight: 500;
+        }
+
+        & span {
+            display: block;
+            margin: 0.5em auto;
+            width: max-content;
+            padding: 0.5rem;
+            text-align: center;
+            border-radius: 0.3rem;
+        }
+
+        & ul {
+            display: block;
+            width: 20rem;
+            margin: 0rem auto;
+            padding: 0.9rem;
+            list-style: none;
+
+            & li {
+                text-align: center;
+            }
+        }
+    }
 }
 
 .main {
@@ -51,8 +101,9 @@ body {
     display: flex;
     flex-direction: row-reverse;
     gap: 2rem;
+    max-width: 70%;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(161, 225, 195, 0.296);
 }
 
 
@@ -62,19 +113,57 @@ ul code {
     border-radius: 4px;
 }
 
+.feature-sections{
+    background-color: #1616c33d;
+    padding: 2rem;
+    margin: 1rem;
+    
+}
+
+.accent-color {
+
+    & a,
+    a:visited{
+        color: #0000ff;
+    }
+}
+
+
+.list {
+
+    display:flex;
+     list-style: none;
+    justify-content: start;
+    
+    & li {
+        margin: 1rem;
+    }
+}
+
+
+
 
 /* Demo */
-.customize-color{
+.customize-color {
     padding: 0 1rem 1rem;
 }
 
 .customize-color div {
     padding: 1rem;
 }
-table{
+
+.demo-container {
+    padding: 1rem;
+}
+
+.default-container {
+    background-color: #0000ff;
+
+}
+table {
     border: 1px solid rgb(200, 200, 200);
     border-radius: 4px;
-   
+
 }
 
 
@@ -84,16 +173,18 @@ tbody {
     border-bottom: 1px solid transparent;
 }
 
-th span{
+th span {
     font-weight: 400;
     padding: 0 1rem;
 }
+
 th,
 td {
     padding: .5rem;
 }
-tr{
-    border-top:1px solid rgb(200, 200, 200);
+
+tr {
+    border-top: 1px solid rgb(200, 200, 200);
 }
 
 .custom {
@@ -102,43 +193,42 @@ tr{
 
 /* code */
 .code-example {
-    
 }
 
 .name-bg {
     background-color: rgb(255, 255, 255);
-    margin:0;
+    margin: 0;
     padding: .5rem;
     border: 1px solid rgb(200, 200, 200);
     border-radius: 4px;
 }
 
-.code-example p span{
+.code-example p span {
     padding: .5rem;
 }
 
-pre.language-css{
-    margin:0;
+pre.language-css {
+    margin: 0;
 }
 
 /* Side bar */
-.side-bar{
+.side-bar {
     flex-basis: 55%;
     background-color: rgb(246, 246, 246);
-    
+
 }
 
 .side-bar h2 {
     font-size: 1.2rem;
-    
+
 }
 
 .side-bar-container {
 
     background-color: white;
-    box-shadow:2px 2px 2px gray;
+    box-shadow: 2px 2px 2px gray;
     border-radius: 8px;
-    padding:  1rem;
+    padding: 1rem;
     margin: 1.2rem;
 
     position: sticky;
@@ -153,5 +243,3 @@ pre.language-css{
 .side-bar li {
     font-size: 1rem;
 }
-
-
