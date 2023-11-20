@@ -46,7 +46,7 @@ body {
 
 .header {
     /* background-color: rgba(123, 119, 223, 0.139); */
-    width: 90%;
+    width: 90vw;
     margin: 0.5rem auto;
     padding: 1rem;
     border-bottom: 2px solid grey;
@@ -73,7 +73,7 @@ body {
 
         & span {
             display: block;
-            margin: 0.5em auto;
+            margin: 0.5rem auto;
             width: max-content;
             padding: 0.5rem;
             text-align: center;
@@ -95,17 +95,15 @@ body {
 }
 
 .main {
-    position: absolute;
-    left: 10rem;
-    right: 10rem;
+    position: relative;
     margin: 0 auto;
     padding-right: 2.2rem;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     gap: 2rem;
-    max-width: 70%;
+    max-width: 50%;
 
-    background-color: rgba(161, 225, 195, 0.296);
+    background-color: rgba(16, 218, 124, 0.296);
 }
 
 
@@ -115,17 +113,16 @@ ul code {
     border-radius: 4px;
 }
 
-.feature-sections{
+.feature-sections {
     background-color: #1616c313;
     padding: 2rem;
     margin: 1rem;
-    color: ;
 }
 
 .accent-color {
 
     & a,
-    a:visited{
+    a:visited {
         color: #0000ff;
     }
 }
@@ -133,14 +130,95 @@ ul code {
 
 .list {
 
-    display:flex;
-     list-style: none;
+    display: flex;
+    list-style: none;
     justify-content: start;
-    
+
     & li {
         margin: 1rem;
     }
 }
+
+/* Dynamic Viewport Styling */
+
+/* .dynamic-viewport {} */
+/* .viewport-example{} */
+
+/* Container Query */
+/* .container-queries {} */
+
+.container-example {
+    margin: 1rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(100, 148, 237, 0.234);
+    width: 70%;
+    container-type: inline-size;
+}
+
+.product-one,
+.product-two {
+    background-color: rgb(255, 255, 255);
+    padding: 0rem 1rem;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & img {
+        width: 250px;
+        margin-top: 1rem;
+        border-radius: 10%;
+    }
+
+    & h4 {
+        color: #0000ff;
+        font-weight: 300;
+        background-color: rgba(128, 128, 128, 0.3);
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    & p {
+        background-color: #0000ff0e;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    & button {
+        margin: 1rem;
+        padding: 0.5rem;
+        width: 5rem;
+        border-radius: 1rem;
+        border: none;
+        font-size: 18px;
+    }
+
+    & button:hover {
+        background-color: gray;
+    }
+}
+
+@container (min-width: 500px) {
+
+    .product-one p {
+        width: 500px;
+        background-color: #0000ff29;
+        color: #fff;
+    }
+
+    .product-two button {
+        width: 300px;
+    }
+}
+
+
+
+
+
+
 
 
 
@@ -162,6 +240,7 @@ ul code {
     background-color: #0000ff;
 
 }
+
 table {
     border: 1px solid rgb(200, 200, 200);
     border-radius: 4px;
@@ -194,8 +273,7 @@ tr {
 }
 
 /* code */
-.code-example {
-}
+/* .code-example {} */
 
 .name-bg {
     background-color: rgb(255, 255, 255);
@@ -215,8 +293,10 @@ pre.language-css {
 
 /* Side bar */
 .side-bar {
-    flex-basis: 55%;
-    background-color: rgb(246, 246, 246);
+    position: fixed;
+    top: 500px;
+    left: 100px;
+    background-color: rgb(80, 76, 188);
 
 }
 
@@ -233,7 +313,7 @@ pre.language-css {
     padding: 1rem;
     margin: 1.2rem;
 
-    position: sticky;
+    /* position: sticky; */
     top: 5rem;
 
 }
@@ -245,3 +325,76 @@ pre.language-css {
 .side-bar li {
     font-size: 1rem;
 }
+
+footer {
+
+    background-color: rgba(98, 105, 105, 0.165);
+    margin: 2rem auto 0;
+    padding: 0.3rem;
+    position: relative;
+    bottom: 1rem;
+    width: 50%;
+
+    & h2 {
+        text-align: center;
+    }
+
+    & ul {
+        list-style: none;
+        margin: 0rem auto;
+        text-align: center;
+        line-height: 0.5;
+    }
+}
+
+
+/* Demo Page styles */
+
+/* body pages */
+.sheet {
+    height: 100vh;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.sheet .viewport {
+    height: none;
+}
+
+/* accent colour */
+.form {
+    /* background-color: rgb(168, 211, 249); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    width: 500px;
+    height: 500px;
+    margin: 15rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* viewport */
+.container {
+    background-color: rgba(144, 238, 144, 0.3);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* container Query */
+
+.container.container-demo {
+  max-width: 50%;
+  
+}
+.containerQ {
+background-color: #cdcde0;
+
+
+}
+
+@media{}
+
+@container{}

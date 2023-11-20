@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS New Technologies</title>
+    <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="styles/prism.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/prism.js" defer></script>
@@ -159,82 +160,82 @@
             </section>
 
 
+        </section>
 
 
 
 
+        <section class="feature-sections dynamic-viewport">
 
-            <section class="feature-sections dynamic-viewport">
+            <h2>2. Dynamic Viewport</h2>
+            <a href="https://caniuse.com/?search=dynamic%20viewport">Supported Browsers</a>
 
-                <h2>2. Dynamic Viewport</h2>
-                <a href="https://caniuse.com/?search=dynamic%20viewport">Supported Browsers</a>
+            <article>
+                <h3>What is dynamic Viewport?</h3>
 
-                <article>
-                    <h3>What is dynamic Viewport?</h3>
+                <p>CSS viewport units - ‘vw’ for width and ‘vh’ for height - work well on desktop, but on mobile
+                    devices. They do not take into consideration the dynamic UI elements such as the address or the
+                    navigation bar. </p>
 
-                    <p>CSS viewport units - ‘vw’ for width and ‘vh’ for height - work well on desktop, but on mobile
-                        devices. They do not take into consideration the dynamic UI elements such as the address or the
-                        navigation bar. </p>
-
-                    <p>That means when these UI elements expand or retract, your content may not display as intended.
-                        Dynamic viewport properties provide a way for you to get the viewport dimensions as specified.
-                    </p>
-
+                <p>That means when these UI elements expand or retract, your content may not display as intended.
+                    Dynamic viewport properties provide a way for you to get the viewport dimensions as specified.
+                </p>
 
 
-                    <h3> Why use Dynamiv ViewPort?</h3>
 
-                    <p>On mobile, the address bar at the top and the navigation bar at the bottom, typically changes in
-                        size as the user scrolls up or down. But it does not changes the viewport to respond to the
-                        newly available space on the device.
-                    </p>
+                <h3> Why use Dynamiv ViewPort?</h3>
 
-                    <p>That why we have the new viewport units to make the viewport respond to the full specified
-                        dimensionso f the viewport.
-                    </p>
+                <p>On mobile, the address bar at the top and the navigation bar at the bottom, typically changes in
+                    size as the user scrolls up or down. But it does not changes the viewport to respond to the
+                    newly available space on the device.
+                </p>
 
-                    <h3>Dynamic Viewport properties</h3>
+                <p>That why we have the new viewport units to make the viewport respond to the full specified
+                    dimensionso f the viewport.
+                </p>
 
-                    <ul class="list">
-                        <li><code>svw</code></li>
-                        <li><code>svh</code></li>
-                        <li><code>lvw</code></li>
-                        <li><code>lvh</code></li>
-                        <li><code>dvw</code></li>
-                        <li><code>dvh</code></li>
-                    </ul>
+                <h3>Dynamic Viewport properties</h3>
 
-                    <p>There are 3 new units for the dynamic viewport properties. SV, LV DV, with their respective width
-                        and height. In most cases you would use the DV as it allows for responsiveness and is between
-                        the SV LV.
-                    </p>
+                <ul class="list">
+                    <li><code>svw</code></li>
+                    <li><code>svh</code></li>
+                    <li><code>lvw</code></li>
+                    <li><code>lvh</code></li>
+                    <li><code>dvw</code></li>
+                    <li><code>dvh</code></li>
+                </ul>
 
-                    <p>SV sets the size of the viewport with the address and navigation bar in consideration, while LV
-                        does not consider the address and navigation bar. With DV it acts as both the SV and the LV,
-                        making the viewport update responsively.
-                    </p>
-                </article>
+                <p>There are 3 new units for the dynamic viewport properties. SV, LV DV, with their respective width
+                    and height. In most cases you would use the DV as it allows for responsiveness and is between
+                    the SV LV.
+                </p>
+
+                <p>SV sets the size of the viewport with the address and navigation bar in consideration, while LV
+                    does not consider the address and navigation bar. With DV it acts as both the SV and the LV,
+                    making the viewport update responsively.
+                </p>
+            </article>
 
 
-                <!-- 
+            <!-- 
                     ***********
                     How are we going to show a static example for this section?
                     We don't have an example like the accent color exampl to enbedd in the code
                     *************
                 -->
-                <section>
+            <section class="viewport-example">
 
-                    <h3>Example</h3>
+                <h3>Example</h3>
 
-                    <img src="/Viewport Units.jpeg"
-                        alt="picture of dynamic viewport example with 3 phone screen showing the viewport units"
-                        width="500">
+                <img src="/Viewport Units.jpeg"
+                    alt="picture of dynamic viewport example with 3 phone screen showing the viewport units"
+                    width="500">
 
-                    <h3>Code Output</h3>
+                <h3>Code Output</h3>
 
-                    <h4 class="name-bg">CSS</h4>
+                <h4 class="name-bg">CSS</h4>
 
-                    <pre>
+                <pre>
                             <code class="language-css line-numbers" data-prismjs-copy="Copy">
                                 .container {
                                     width: 90dvw;
@@ -243,72 +244,137 @@
                             </code>
                     </pre>
 
-                    <h5><a href="viewport.html">Demo</a></h5>
-                </section>
-
+                <h5><a href="viewport.html">Demo</a></h5>
             </section>
 
+        </section>
 
-            <section class="feature-sections container-queries">
 
-                <h2>3. Container Queries</h2>
-                <a href="https://caniuse.com/?search=container%20Queries%20(size)">Supported Browsers</a>
+        <section class="feature-sections container-queries">
 
-                <article>
+            <h2>3. Container Queries</h2>
+            <a href="https://caniuse.com/?search=container%20Queries%20(size)">Supported Browsers</a>
 
-                    <h3>What is Container Query</h3>
+            <article>
 
-                    <p>Container query is a CSS propery, that allows you to adjust the style of an element based on its container dimensions  and not the viewport. (Mozilla Developer Network, n.d.).</p>
+                <h3>What is Container Query</h3>
 
-                    <p>With a container query, you would use the following properties and definitions:</p>
+                <p>Container query is a CSS propery, that allows you to adjust the style of an element based on its
+                    container dimensions and not the viewport. (Mozilla Developer Network, n.d.).</p>
 
-                    <ol>
-                        <li> <h4>Container-type:</h4> This is a property that helps the browser know which containers you might be interested in checking later for their size. The values that can be used for this property are size, inline-size, or normal (Mozilla Developer Network, n.d.).
-                        </li>
+                <p>With a container query, you would use the following properties and units:</p>
 
-                        <li> <h4>Container-name:</h4> 
-                            This is another way to give a containment context. Once the container is named, the name can be used in a container query to target a specific container (Mozilla Developer Network, n.d.).
-                        </li>
+                <ol>
+                    <li>
+                        <h4>Container-type:</h4> This is a property that helps the browser know which containers you
+                        might be interested in checking later for their size. The values that can be used for this
+                        property are size, inline-size, or normal (Mozilla Developer Network, n.d.).
+                    </li>
 
-                        <li> <h4>Inline-size:</h4>
-                            This refers to the width of the container. It considers how wide something is and affects how elements are laid out horizontally. It controls how the content fits and looks in that width (Mozilla Developer Network, n.d.).
-                        </li>
+                    <li>
+                        <h4>Container-name:</h4>
+                        This is another way to give a containment context. Once the container is named, the name can
+                        be used in a container query to target a specific container (Mozilla Developer Network,
+                        n.d.).
+                    </li>
 
-                        <li> <h4>Size:</h4>
-                            This considers both the width and the height of a container where content is placed. It deals with how elements are arranged and how large the container holding the content is. It affects how the layout, appearance, and overall size of the container are controlled (Mozilla Developer Network, n.d.).
-                        </li>
+                    <li>
+                        <h4>Inline-size:</h4>
+                        This refers to the width of the container. It considers how wide something is and affects
+                        how elements are laid out horizontally. It controls how the content fits and looks in that
+                        width (Mozilla Developer Network, n.d.).
+                    </li>
 
-                        <li> <h4>Normal:</h4>
-                            This means that the element does not dictate or set any rules specifically for the size of its container. It does not play a role in queries about container size, but it affects the style and appearance of the container itself (Mozilla Developer Network, n.d.).
-                        </li>
+                    <li>
+                        <h4>Size:</h4>
+                        This considers both the width and the height of a container where content is placed. It
+                        deals with how elements are arranged and how large the container holding the content is. It
+                        affects how the layout, appearance, and overall size of the container are controlled
+                        (Mozilla Developer Network, n.d.).
+                    </li>
 
-                    </ol>
+                    <li>
+                        <h4>Normal:</h4>
+                        This means that the element does not dictate or set any rules specifically for the size of
+                        its container. It does not play a role in queries about container size, but it affects the
+                        style and appearance of the container itself (Mozilla Developer Network, n.d.).
+                    </li>
 
-                    <h3>Why use container Query</h3>
+                </ol>
 
-                    <h4>Specificity</h4>
-                    <p>container query can help you target elements with specific styles at a set dimension without media query. Previously, if you wanted to change an element based on the device dimensions you would use a media query, which is based on the DOM viewport dimensions. That would mean you need to make a new media query to change that element styling when the viewport changes.</p>
+                <ul>
+                    <li><code>cqw: 1% of the query container width</code></li>
+                    <li><code>cqh: 1% of the query container height</code></li>
+                    <li><code>cqi: 1% of a query conntainer inline size</code></li>
+                    <li><code>cqb: 1% of a query container block size</code></li>
+                    <li><code>cqmin: The smaller value of either cqi or cqb</code></li>
+                    <li><code>cqmax: The lager value of either cqi or cqb</code></li>
+                </ul>
 
-                    <h4>Responsiveness</h4>
-                    <p>With container query you can write a query for that <strong>"Container"</strong> and when the viewport changes the styles will apply to the element as specified, without having to change other elements or writing a new media for that container or other elements/containers.</p>
+                <h3>Why use container Query</h3>
 
-                    <h4>customization</h4>
-                    <p>It allows for more customization options. For example, you may want to modify a sidebar, at a certain width or height you can set a query to sticky the sidebar at set dimenions, stack in a column below set width, or removed at set height, without having to styles other elements that is not affected by the viewport size changes. </p>
+                <h4>Specificity</h4>
+                <p>container query can help you target elements with specific styles at a set dimension without
+                    media query. Previously, if you wanted to change an element based on the device dimensions you
+                    would use a media query, which is based on the DOM viewport dimensions. That would mean you need
+                    to make a new media query to change that element styling when the viewport changes.</p>
 
-                    <h3>Where would you use a Container Query</h3>
+                <h4>Responsiveness</h4>
+                <p>With container query you can write a query for that <strong>"Container"</strong> and when the
+                    viewport changes the styles will apply to the element as specified, without having to change
+                    other elements or writing a new media for that container or other elements/containers.</p>
 
-                    <p>Container query can be used wherever you need to adjust an element’s style or lay based on its container. It is <strong><em>Kind of</em></strong> an alternative to a media query, but best used with media queries as they  work in relation to each other.</p>
+                <h4>customization</h4>
+                <p>It allows for more customization options. For example, you may want to modify a sidebar, at a
+                    certain width or height you can set a query to sticky the sidebar at set dimenions, stack in a
+                    column below set width, or removed at set height, without having to styles other elements that
+                    is not affected by the viewport size changes. </p>
 
-                    <p>Container queries works like flex and grid, where the styles is applied to the descendant element of a container. Such as blocks level elements like sections, articles, cards, forms, and sidebars and more. Additionally, it could be used for global blocks such as header, footer, and main.
-                    </p>
+                <h3>Where would you use a Container Query</h3>
 
-                </article>
+                <p>Container query can be used wherever you need to adjust an element’s style or lay based on its
+                    container. It is <strong><em>Kind of</em></strong> an alternative to a media query, but best
+                    used with media queries as they work in relation to each other.</p>
 
-                <section>
-                    <h3>Example</h3>
+                <p>Container queries works like flex and grid, where the styles is applied to the descendant element
+                    of a container. Such as blocks level elements like sections, articles, cards, forms, and
+                    sidebars and more. Additionally, it could be used for global blocks such as header, footer, and
+                    main.
+                </p>
 
-                    <h4 class="name-bg">CSS</h4>
-                    <pre>
+            </article>
+
+            <section>
+                <h3>Example</h3>
+
+
+                <section class="container-example">
+
+                    <article class="product-one">
+                        <img src="http://fakeimg.pl/300/#00ff00?text=Image&font=museo" alt="">
+                        <h4>Product One</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae magnam inventore
+                            labore iure aperiam necessitatibus, nobis a doloribus accusamus maiores iste iusto
+                            suscipit facilis commodi quaerat quas quasi minima similique?</p>
+
+                        <button>Cart</button>
+                    </article>
+
+                    <article class="product-two">
+                        <img src="http://fakeimg.pl/300/#00ff00?text=Image&font=museo" alt="">
+                        <h4>Product One</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae magnam inventore
+                            labore iure aperiam necessitatibus, nobis a doloribus accusamus maiores iste iusto
+                            suscipit facilis commodi quaerat quas quasi minima similique?</p>
+
+                        <button>Cart</button>
+                    </article>
+
+                </section>
+
+
+                <h4 class="name-bg">CSS</h4>
+                <pre>
                             <code class="language-css line-numbers" data-prismjs-copy="Copy">
                                 .container {
                                  container-type: inline-size:
@@ -316,6 +382,7 @@
                                     }
 
                                 @container product-card (min-width: 700px) {
+                                    
                                     h2 {
                                         color: aliceblue
                                         font-weight: 300;
@@ -323,13 +390,19 @@
                                 }
                             </code>
                           
-                            <code class="language-css line-numbers" data-prismjs-copy="Copy">
-                                //Shorthand
+                    </pre>
+                <br>
+                <pre>
+                    <code class="language-css line-numbers" data-prismjs-copy="Copy">
+
+
+
                                 .container {
                                     container: product-card / inline-size
                                 }
 
                                 @container product-card (min-width: 700px) {
+                                    
                                     h2 {
                                         color: aliceblue
                                         font-weight: 300;
@@ -338,23 +411,64 @@
                             </code>
 
                     </pre>
-                </section>
             </section>
 
+            <h5><a href="container.html">Demo</a></h5>
         </section>
-
-
-        <aside class="side-bar">
-            <div class="side-bar-container">
-                <h2>Table of Content</h2>
-                <ul>
-                    <li><a href="#accent-color">Accent Color</a></li>
-                    <li><a href="#dynamic-viewport">Dynamic Viewport</a></li>
-                    <li><a href="#container-queries">Container Queries</a></li>
-                </ul>
-            </div>
-        </aside>
     </main>
+
+
+
+
+    <aside class="side-bar">
+        <div class="side-bar-container">
+            <h2>Table of Content</h2>
+            <ul>
+                <li><a href="#accent-color">Accent Color</a></li>
+                <li><a href="#dynamic-viewport">Dynamic Viewport</a></li>
+                <li><a href="#container-queries">Container Queries</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <footer>
+
+        <h2>References</h2>
+
+        <ul>
+            <li>
+                <h5><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_container_queries">Mozilla Developer
+                        Network. (n.d.). CSS container queries. Mozilla Developer Network. </a></h5>
+            </li>
+            <li>
+                <h5><a href="https://www.youtube.com/watch?v=rrLAg7xNERA&t=245s&ab_channel=WebDevSimplified">WebDevSimplified.
+                        (2022, November 5). Responsive CSS will never be the same [Video]. YouTube. </a></h5>
+            </li>
+            <li>
+                <h5><a href="https://www.smashingmagazine.com/2021/05/complete-guide-css-container-queries/">Eckles, S.
+                        (2021, May 5). A complete guide to CSS container queries. Smashing Magazine. </a></h5>
+            </li>
+            <li>
+                <h5><a href="https://www.youtube.com/watch?v=3_-Je5XpbqY&ab_channel=KevinPowell">Powell, K. [Kevin
+                        Powell]. (2022, September 22). Container queries are going to change how we make layouts
+                        [Video]. YouTube. </a></h5>
+            </li>
+            <li>
+                <h5><a href="https://dev.to/leomunizq/viewport-units-in-css-beyond-vh-4ndn">DEV Community (2023, October
+                        24): “Viewport units in CSS: Beyond VH.” </a></h5>
+            </li>
+            <li>
+                <h5><a href="https://web.dev/blog/viewport-units">Web.dev (2022, November 29): “The large, small, and
+                        dynamic viewport units.” </a></h5>
+            </li>
+            <li>
+                <h5><a href="https://www.smashingmagazine.com/2021/09/simplifying-form-styles-accent-color/">Smashing
+                        Magazine (2021, September 23): “Simplifying Form Styles With accent-color.” </a></h5>
+            </li>
+        </ul>
+
+    </footer>
+    <br>
 </body>
 
 </html>
