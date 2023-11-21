@@ -10,7 +10,9 @@ body {
     line-height: 1.5;
     position: relative;
     height: 100%;
-    /* background-color: rgb(246, 246, 246); */
+    width: 70vw;
+    background-color: rgb(245, 245, 245);
+    margin: 0rem auto;
 }
 
 h1,
@@ -35,18 +37,9 @@ td {
     width: 10%;
 }
 
-
-
-/* body */
-body {
-    display: block;
-    margin: 0 auto;
-
-}
-
 .header {
     /* background-color: rgba(123, 119, 223, 0.139); */
-    width: 90vw;
+    width: 70%;
     margin: 0.5rem auto;
     padding: 1rem;
     border-bottom: 2px solid grey;
@@ -103,7 +96,7 @@ body {
     gap: 2rem;
     max-width: 50%;
 
-    background-color: rgba(16, 218, 124, 0.296);
+    /* background-color: rgba(16, 218, 124, 0.296); */
 }
 
 
