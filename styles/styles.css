@@ -10,7 +10,7 @@ body {
     line-height: 1.5;
     position: relative;
     height: 100%;
-    width: 70vw;
+    width: 80%;
     background-color: rgb(245, 245, 245);
     margin: 0rem auto;
 }
@@ -30,6 +30,9 @@ ul li {
 table {
     text-align: left;
     padding: 1rem;
+    margin: 0rem auto;
+    width: 50%;
+    background-color: rgba(144, 238, 144, 0.3);
 }
 
 th,
@@ -38,7 +41,6 @@ td {
 }
 
 .header {
-    /* background-color: rgba(123, 119, 223, 0.139); */
     width: 70%;
     margin: 0.5rem auto;
     padding: 1rem;
@@ -110,6 +112,7 @@ ul code {
     background-color: #1616c313;
     padding: 2rem;
     margin: 1rem;
+    width: 100%;
 }
 
 .accent-color {
@@ -132,13 +135,10 @@ ul code {
     }
 }
 
-/* Dynamic Viewport Styling */
-
-/* .dynamic-viewport {} */
-/* .viewport-example{} */
-
-/* Container Query */
-/* .container-queries {} */
+.unit-image {
+    display: block;
+    margin: 0rem auto;
+}
 
 .container-example {
     margin: 1rem auto;
@@ -160,7 +160,7 @@ ul code {
     align-items: center;
 
     & img {
-        width: 250px;
+        width: 230px;
         margin-top: 1rem;
         border-radius: 10%;
     }
@@ -197,7 +197,7 @@ ul code {
 @container (min-width: 500px) {
 
     .product-one p {
-        width: 500px;
+        width: 300px;
         background-color: #0000ff29;
         color: #fff;
     }
@@ -237,7 +237,6 @@ ul code {
 table {
     border: 1px solid rgb(200, 200, 200);
     border-radius: 4px;
-
 }
 
 
@@ -305,8 +304,6 @@ pre.language-css {
     border-radius: 8px;
     padding: 1rem;
     margin: 1.2rem;
-
-    /* position: sticky; */
     top: 5rem;
 
 }
@@ -336,7 +333,7 @@ footer {
         list-style: none;
         margin: 0rem auto;
         text-align: center;
-        line-height: 0.5;
+        /* line-height: 0.5; */
     }
 }
 
@@ -347,47 +344,109 @@ footer {
 .sheet {
     height: 100vh;
     text-align: center;
-    /* display: flex;
-    justify-content: center; */
+
 }
 
-.sheet .viewport {
-    height: none;
-}
+/* .sheet .viewport {
+ 
+} */
 
 /* accent colour */
 .form {
-    /* background-color: rgb(168, 211, 249); */
+    background-color: rgba(144, 238, 144, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
-    width: 500px;
-    height: 500px;
-    margin: 15rem auto;
+    gap: 2rem;
+    width: 18.75rem; ;
+    margin: 3rem auto;
     padding: 2rem;
     border-radius: 10px;
 }
 
 /* viewport */
-.container {
+.container{
     background-color: rgba(144, 238, 144, 0.3);
-    margin: 1rem;
+    margin: 1rem auto;
     padding: 1rem;
+    width: 50%;
+    border-radius: 10px;
+
+    & .sections {
+        background-color: #ffffff;
+        width: 80%;
+        padding: 1rem;
+        margin: 2rem auto;
+        border-radius: 0.625rem;
+
+        & img {
+            width: 70%;
+            margin: 0rem auto;
+            display:block;
+        }
+
+        & p {
+            text-align: center;
+            margin: 1rem auto;
+            padding: 1rem;
+            border-radius: 0.625rem;
+            width:70%;
+        }
+    }
 }
+
+
+/* start from 1000px */
 
 /* container Query */
-
-.container.container-demo {
-  max-width: 50%;
-  
+.container-query-demo {
+    background-color: rgba(144, 238, 144, 0.3);
+    width: 100%;
+    margin: 0rem auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.625rem;
+    /* types in code below during demo */
+    /* container properties */
+    container-type: inline-size;
+    container-name: query-container;
 }
-.containerQ {
-background-color: #cdcde0;
 
+.container-section {
+    margin: 1rem;
+    padding: 3rem;
+    height: 50%;
+    width: auto;
+    background-color: green;
+    border-radius: 10px;
 
+    & h3 {
+        margin-bottom: 100px
+    }
+
+    & p {
+        width: 70%;
+        margin: 1rem auto;
+    }
 }
 
-@media{}
+@media (min-width: 1200px) {
 
-@container{}
+    .section--with {
+    background-color: rgba(0, 0, 255, 0.152);
+    text-align: start;
+    color: green;
+    }
+
+}
+/* type in code below during demo */
+@container query-container (min-width:1200px) {
+    
+    .section-query {
+    background-color: hotpink;
+    color:khaki;
+    border-radius: 20%;
+    }
+
+}
