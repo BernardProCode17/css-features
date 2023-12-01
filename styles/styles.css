@@ -375,7 +375,7 @@ footer {
 
     & .vp{
         background-color: red;
-        height: 250vw;
+        height: 250dvh;
     }
 
     & .sections {
