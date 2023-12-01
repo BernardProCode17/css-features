@@ -419,6 +419,7 @@ footer {
     display: flex;
     justify-content: center;
     border-radius: 0.625rem;
+    
     /* types in code below during demo */
     /* container properties */
     container-type: inline-size;
