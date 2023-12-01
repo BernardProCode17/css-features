@@ -380,7 +380,11 @@ footer {
     }
 
     & .text {
-        margin: 2rem auto;
+        position:absolute;
+        top: 35rem;
+        left: 1rem;
+        right: 1rem;
+        margin: 0 auto;
         
     }
 
