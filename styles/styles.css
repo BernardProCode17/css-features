@@ -1,18 +1,11 @@
-/* html {
-    height: 100%;
-
-} */
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2rem;
     color: rgb(28, 28, 28);
     line-height: 1.5;
     position: relative;
-    height: 100%;
-    width: 80%;
-    background-color: rgb(245, 245, 245);
-    margin: 0rem auto;
+
+    background-color: white;
 }
 
 h1,
@@ -30,9 +23,7 @@ ul li {
 table {
     text-align: left;
     padding: 1rem;
-    margin: 0rem auto;
-    width: 50%;
-    background-color: rgba(144, 238, 144, 0.3);
+    margin: 1rem auto;
 }
 
 th,
@@ -40,193 +31,181 @@ td {
     width: 10%;
 }
 
-.header {
-    width: 70%;
-    margin: 0.5rem auto;
-    padding: 1rem;
-    border-bottom: 2px solid grey;
+hr {
+    margin-top: 2rem;
+}
 
+h2 {
+    background-color: whitesmoke;
+    padding: .3rem;
+}
+
+/*
+===========================
+main-container 
+===========================
+ */
+
+.main-container {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    right: 0;
+    
+    margin: 0 auto;
+}
+
+@media (width > 70em) {
+    .main-container{
+        max-width: 70em;
+    }
+    
+}
+
+/*
+===========================
+header 
+===========================
+ */
+
+.header {
+
+    margin: 1rem;
 
     & h1 {
-        text-align: center;
-        font-size: 3rem;
-
+        font-size: 2.3rem;
     }
 
     .intro-message {
-        background-color: rgba(165, 168, 170, 0.50);
-        border-radius: 1rem;
-        max-width: 50%;
-        margin: 0rem auto;
 
         & h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+}
+
+@media (width > 40em) {
+    .header {
+       
+        margin: 0.5rem;
+        padding: 0.5rem;
+
+        & h1 {
             text-align: center;
-            width: 70%;
-            margin: 1.9rem auto;
-            font-weight: 500;
+            font-size: 3rem;
         }
 
-        & span {
-            display: block;
-            margin: 0.5rem auto;
-            width: max-content;
-            padding: 0.5rem;
-            text-align: center;
-            border-radius: 0.3rem;
-        }
-
-        & ul {
-            display: block;
-            width: 20rem;
+        .intro-message {
+            
+            border-radius: 1rem;
             margin: 0rem auto;
-            padding: 0.9rem;
-            list-style: none;
 
-            & li {
-                text-align: center;
+            & h2 {
+                margin: 1.9rem auto;
+                font-weight: 500;
+            }
+
+            & ul {
+                display: block;
+                
             }
         }
     }
+
 }
-
-.main {
-    position: relative;
-    margin: 0 auto;
-    padding-right: 2.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 50%;
-
-    /* background-color: rgba(16, 218, 124, 0.296); */
-}
-
 
 ul code {
     padding: 0.3rem;
-    background-color: rgb(246, 246, 246);
-    border-radius: 4px;
 }
+
+/*
+===========================
+feature-sections
+===========================
+ */
 
 .feature-sections {
-    background-color: #1616c313;
-    padding: 2rem;
-    margin: 1rem;
-    width: 100%;
-}
 
-.accent-color {
+    padding: .5rem;
+    margin: 1.5rem .7rem;
+    margin-top: 3rem;
 
-    & a,
-    a:visited {
-        color: #0000ff;
+    & h2 {
+        background-color: white;
+        border-bottom: 1px solid gray;
     }
+
+    & h3 {
+        font-size: 1.2rem;
+    }
+
 }
 
+.title {
+    background-color: whitesmoke;
+    padding: .5rem;
+    font-weight: 400;
+}
 
-.list {
+@media (width > 40em) {
+    ul code {
+        padding: 0.3rem;
+        
+    }
 
-    display: flex;
-    list-style: none;
-    justify-content: start;
-
-    & li {
+    .feature-sections {
+      
         margin: 1rem;
     }
 }
 
-.unit-image {
-    display: block;
-    margin: 0rem auto;
+/*
+===========================
+Prism Code
+===========================
+ */
+
+/* code */
+.code-example {
+    margin: 2rem auto;
 }
 
-.container-example {
-    margin: 1rem auto;
-    padding: 2rem;
-    border-radius: 1rem;
-    background-color: rgba(100, 148, 237, 0.234);
-    width: 70%;
-    container-type: inline-size;
-}
-
-.product-one,
-.product-two {
+.name-bg {
     background-color: rgb(255, 255, 255);
-    padding: 0rem 1rem;
-    border-radius: 1rem;
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    & img {
-        width: 230px;
-        margin-top: 1rem;
-        border-radius: 10%;
-    }
-
-    & h4 {
-        color: #0000ff;
-        font-weight: 300;
-        background-color: rgba(128, 128, 128, 0.3);
-        padding: 0.5rem;
-        border-radius: 1rem;
-    }
-
-    & p {
-        background-color: #0000ff0e;
-        padding: 1rem;
-        text-align: center;
-        border-radius: 1rem;
-    }
-
-    & button {
-        margin: 1rem;
-        padding: 0.5rem;
-        width: 5rem;
-        border-radius: 1rem;
-        border: none;
-        font-size: 18px;
-    }
-
-    & button:hover {
-        background-color: gray;
-    }
+    margin: 0;
+    padding: .5rem;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 0px;
 }
 
-@container (min-width: 500px) {
-
-    .product-one p {
-        width: 300px;
-        background-color: #0000ff29;
-        color: #fff;
-    }
-
-    .product-two button {
-        width: 300px;
-    }
+.code-example p span {
+    padding: .5rem;
 }
 
+pre.language-css {
+    margin: 0;
+}
 
+/*
+===========================
+Accent color Example
+===========================
+ */
 
-
-
-
-
-
-
-
-/* Demo */
+/* Example */
 .customize-color {
-    padding: 0 1rem 1rem;
+    & h4 {
+        font-weight: 400;
+    }
 }
 
-.customize-color div {
-    padding: 1rem;
-}
+.ac-mobile {
 
-.demo-container {
-    padding: 1rem;
+    & span {
+        margin-right: .5rem;
+    }
 }
 
 .default-container {
@@ -237,8 +216,8 @@ ul code {
 table {
     border: 1px solid rgb(200, 200, 200);
     border-radius: 4px;
+    display: none;
 }
-
 
 tbody {
     border-left: 1px solid transparent;
@@ -264,81 +243,243 @@ tr {
     accent-color: #0000ff;
 }
 
-/* code */
-.code-example {}
+@media (width > 40em) {
 
-.name-bg {
+    table {
+        display: block;
+    }
+
+    .ac-mobile {
+        display: none;
+    }
+}
+
+/*
+===========================
+Dynamic viewport
+===========================
+ */
+
+/* Dynamic viewport */
+
+.list {
+
+    display: none;
+    list-style: none;
+    justify-content: start;
+
+    & li {
+        margin: 1rem;
+    }
+}
+
+.unit-image {
+    display: block;
+    margin: 0rem auto;
+}
+
+/*
+===========================
+Container Queries
+===========================
+ */
+
+.container-example {
+    margin: 1rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(100, 148, 237, 0.234);
+    container-type: inline-size;
+}
+
+.product-one,
+.product-two {
     background-color: rgb(255, 255, 255);
-    margin: 0;
-    padding: .5rem;
-    border: 1px solid rgb(200, 200, 200);
-    border-radius: 0px;
+    padding: 0rem 1rem;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & img {
+       
+        margin-top: 1rem;
+        border-radius: 10%;
+    }
+
+    & h4 {
+        color: #0000ff;
+        font-weight: 300;
+        background-color: #e5e5e5;
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    & p {
+        background-color: #0000ff0e;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    & button {
+        margin: 1rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        border: none;
+        font-size: 18px;
+    }
+
+    & button:hover {
+        background-color: gray;
+    }
 }
 
-.code-example p span {
-    padding: .5rem;
+@container (min-width: 500px) {
+
+    .product-one p {
+       
+        background-color: #0000ff29;
+        color: #fff;
+    }
+
+    .product-two button {
+        background-color: red;
+    }
 }
 
-pre.language-css {
-    margin: 0;
-}
+/*
+===========================
+Side bar
+===========================
+ */
 
 /* Side bar */
+
 .side-bar {
     position: fixed;
-    top: 500px;
-    left: 100px;
-    background-color: rgb(80, 76, 188);
-
-}
-
-.side-bar h2 {
-    font-size: 1.2rem;
-
-}
-
-.side-bar-container {
-
-    background-color: white;
-    box-shadow: 2px 2px 2px gray;
-    border-radius: 8px;
+    top: 0;
+    width: 100%;
     padding: 1rem;
-    margin: 1.2rem;
-    top: 5rem;
-
+    z-index: 10;
+    background-color: whitesmoke;
 }
 
 .side-bar ul {
+    list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-.side-bar li {
-    font-size: 1rem;
+.side-bar a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
 }
+
+/* START -- STYLES FOR MOBILE MENU */
+/* we will cover this more later */
+.side-bar ul {
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    right: 0;
+    background-color: whitesmoke;
+}
+
+.menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    padding: 1rem;
+}
+
+.menu-toggle:focus {
+    border: 0;
+    outline: 1px dotted;
+}
+
+.side-bar.toggled ul {
+    display: block;
+}
+
+/* END -- STYLES FOR MOBILE MENU */
+
+
+@media (min-width: 46em) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .side-bar {
+        flex: 1 1 auto;
+        padding: 0 1rem;
+    }
+
+    .side-bar ul,
+    .side-bar.toggled ul {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+        /* START - Remove Mobile Menu Styles */
+        position: relative;
+        top: 0;
+        /* END - Remove Mobile Menu Styles  */
+    }
+
+    .side-bar a {
+        line-height: 4.5rem;
+        /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
+        padding: 0 1rem;
+    }
+
+}
+
+@media (min-width: 70em) {
+    .side-bar-container{
+        max-width: 70em;
+    }
+    
+} 
+
+/*
+===========================
+Footer
+===========================
+ */
 
 footer {
 
-    background-color: rgba(98, 105, 105, 0.165);
-    margin: 2rem auto 0;
-    padding: 0.3rem;
-    position: relative;
+    font-size: 1rem;
     bottom: 1rem;
-    width: 50%;
-
+    
     & h2 {
-        text-align: center;
-    }
 
-    & ul {
-        list-style: none;
-        margin: 0rem auto;
+        padding: .3rem;
+        font-size: 1.2rem;
+        margin: 0;
         text-align: center;
-        /* line-height: 0.5; */
     }
+    
 }
 
+/*
+===========================
+Demo Page styles
+===========================
+ */
 
-/* Demo Page styles */
+ /*
+===========================
+Accent-color Demo
+===========================
+ */
 
 /* body pages */
 .sheet {
@@ -347,58 +488,53 @@ footer {
 
 }
 
-/* .sheet .viewport {
- 
-} */
-
 /* accent colour */
 .form {
-    background-color: rgba(144, 238, 144, 0.3);
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    width: 18.75rem; ;
+    width: 18.75rem;
     margin: 3rem auto;
     padding: 2rem;
     border-radius: 10px;
-    accent-color: red;
+
+
+    /* Demo */
+    /* accent-color: red; */
+
 }
 
+ /*
+===========================
+Dynamic Viewport Demo - vh
+===========================
+ */
+
+
 /* viewport */
-.container{
+.container {
     background-color: rgba(144, 238, 144, 0.3);
     margin: 1rem auto;
     padding: 1rem;
-    width: 50%;
     border-radius: 10px;
 
-    & .vp{
-        background-color: red;
+    & .vp-vh {
+        background-color: gray;
         width: 100%;
         height: 100vh;
     }
 
-    & .text {
-        position:absolute;
-        top: 35rem;
-        left: 1rem;
-        right: 1rem;
-        margin: 0 auto;
-        
-    }
-
     & .sections {
-        background-color: red;
-        width: 80%;
+        background-color: lightgreen;
         padding: 1rem;
         margin: 2rem auto;
         border-radius: 0.625rem;
 
         & img {
-            width: 70%;
             margin: 0rem auto;
-            display:block;
+            display: block;
         }
 
         & p {
@@ -406,11 +542,28 @@ footer {
             margin: 1rem auto;
             padding: 1rem;
             border-radius: 0.625rem;
-            width:70%;
         }
     }
 }
 
+ /*
+===========================
+Dynamic Viewport Demo - dvh
+===========================
+ */
+
+ .container {
+    background-color: rgba(144, 238, 144, 0.3);
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+
+    & .vp-dvh {
+        background-color: gray;
+        width: 100%;
+        height: 100dvh;
+    }
+ }
 
 /* start from 1000px */
 
@@ -423,7 +576,7 @@ footer {
     display: flex;
     justify-content: center;
     border-radius: 0.625rem;
-    
+
     /* types in code below during demo */
     /* container properties */
     container-type: inline-size;
@@ -451,19 +604,20 @@ footer {
 @media (min-width: 1200px) {
 
     .section--with {
-    background-color: rgba(0, 0, 255, 0.152);
-    text-align: start;
-    color: green;
+        background-color: rgba(0, 0, 255, 0.152);
+        text-align: start;
+        color: green;
     }
 
 }
+
 /* type in code below during demo */
 @container query-container (min-width:1200px) {
-    
+
     .section-query {
-    background-color: hotpink;
-    color:khaki;
-    border-radius: 20%;
+        background-color: hotpink;
+        color: khaki;
+        border-radius: 20%;
     }
 
 }
